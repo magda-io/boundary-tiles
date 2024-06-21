@@ -20,7 +20,7 @@ const srcDataDir = `./srcdata`; // where to find source zip files. Nothing writt
 const tmpDir = `./tmp`; // where zip files are temporarily unzipped to
 const geojsonDir = `./geojson`; // where generated newline-delimited GeoJSON files are written
 const regionMappingDir = `./regionMapping`; // where to find and update regionmapping file and write regionids files
-const tileHost = `tiles.terria.io`;
+const tileHost = `tiles.magda.io`;
 const testCsvDir = "./test";
 const mbtilesDir = "./mbtiles";
 

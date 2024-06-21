@@ -1,0 +1,176 @@
+// A configuration file for use within the TerriaJS team. This should ideally be a record of options
+// used for every layer that we make available on tiles.terria.io
+{
+  STE_2021: {
+    tippecanoeOptions: {
+      minimumZoom: 0,
+      maximumZoom: 12,
+    },
+    sharedGeopackage: {
+      // From https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files
+      zip: "ASGS_2021_MAIN_STRUCTURE_GPKG_GDA2020.zip",
+      gpkg: "ASGS_2021_Main_Structure_GDA2020.gpkg",
+      layerName: "STE_2021_AUST_GDA2020",
+    },
+    regionTypes: {
+      STE_2021: {
+        regionProp: "STATE_CODE_2021",
+        nameProp: "STATE_NAME_2021",
+        aliases: ["ste_code_2021", "ste_code", "ste"],
+        description: "States and Territories 2021",
+        bbox: [96.81, -43.74, 168.0, -9.14],
+      },
+    },
+  },
+  SA1_2021: {
+    tippecanoeOptions: {
+      minimumZoom: 0,
+      maximumZoom: 12,
+    },
+    sharedGeopackage: {
+      // From https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files
+      zip: "ASGS_2021_MAIN_STRUCTURE_GPKG_GDA2020.zip",
+      gpkg: "ASGS_2021_Main_Structure_GDA2020.gpkg",
+      layerName: "SA1_2021_AUST_SHP_GDA2020",
+    },
+    regionTypes: {
+      SA1_2021: {
+        regionProp: "SA1_CODE21",
+        nameProp: "SA1_CODE21",
+        aliases: ["sa1_code_2021", "sa1_maincode_2021", "sa1", "sa1_code"],
+        description: "Statistical Area Level 1 2021 (ABS)",
+        bbox: [96.81, -43.75, 159.11, -9.14],
+      },
+    },
+  },
+  SA2_2021: {
+    tippecanoeOptions: {
+      minimumZoom: 0,
+      maximumZoom: 12,
+    },
+    sharedGeopackage: {
+      // From https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files
+      zip: "ASGS_2021_MAIN_STRUCTURE_GPKG_GDA2020.zip",
+      gpkg: "ASGS_2021_Main_Structure_GDA2020.gpkg",
+      layerName: "SA2_2021_AUST_SHP_GDA2020",
+    },
+    regionTypes: {
+      SA2_2021: {
+        regionProp: "SA2_CODE21",
+        nameProp: "SA2_NAME21",
+        aliases: ["sa2_code_2021", "sa2_maincode_2021", "sa2", "sa2_code"],
+        description: "Statistical Area Level 2 2021 by code (ABS)",
+        bbox: [96.81, -43.75, 168.0, -9.14],
+      },
+    },
+  },
+  SA3_2021: {
+    tippecanoeOptions: {
+      minimumZoom: 0,
+      maximumZoom: 12,
+    },
+    sharedGeopackage: {
+      // From https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files
+      zip: "ASGS_2021_MAIN_STRUCTURE_GPKG_GDA2020.zip",
+      gpkg: "ASGS_2021_Main_Structure_GDA2020.gpkg",
+      layerName: "SA3_2021_AUST_SHP_GDA2020",
+    },
+    regionTypes: {
+      SA3_2021: {
+        regionProp: "SA3_CODE21",
+        nameProp: "SA3_NAME21",
+        aliases: ["sa3_code_2021", "sa3_maincode_2021", "sa3", "sa3_code"],
+        description: "Statistical Area Level 3 2021 by code (ABS)",
+        bbox: [96.81, -43.75, 168.0, -9.14],
+      },
+    },
+  },
+  SA4_2021: {
+    tippecanoeOptions: {
+      minimumZoom: 0,
+      maximumZoom: 12,
+    },
+    sharedGeopackage: {
+      // From https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files
+      zip: "ASGS_2021_MAIN_STRUCTURE_GPKG_GDA2020.zip",
+      gpkg: "ASGS_2021_Main_Structure_GDA2020.gpkg",
+      layerName: "SA4_2021_AUST_SHP_GDA2020",
+    },
+    regionTypes: {
+      SA4_2021: {
+        regionProp: "SA4_CODE21",
+        nameProp: "SA4_NAME21",
+        aliases: ["sa4_code_2021", "sa4_maincode_2021", "sa4", "sa4_code"],
+        description: "Statistical Area Level 4 2021 by code (ABS)",
+        bbox: [96.81, -43.75, 168.0, -9.14],
+      },
+    },
+  },
+  LGA_2023: {
+    tippecanoeOptions: {
+      minimumZoom: 0,
+      maximumZoom: 12,
+    },
+    sharedGeopackage: {
+      // From https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files
+      zip: "ASGS_Ed3_Non_ABS_Structures_GDA2020_updated_2023.zip",
+      gpkg: "ASGS_Ed3_Non_ABS_Structures_GDA2020_updated_2023.gpkg",
+      layerName: "LGA_2023_AUST_GDA2020",
+    },
+    regionTypes: {
+      LGA_2023: {
+        regionProp: "LGA_CODE_2023",
+        nameProp: "LGA_NAME_2023",
+        aliases: ["lga_code_2023", "lga_code", "lga"],
+        description: "Local Government Areas 2023",
+        bbox: [96.81, -43.74, 168.0, -9.14],
+      },
+    },
+  },
+  ELB_2021: {
+    tippecanoeOptions: {
+      minimumZoom: 0,
+      maximumZoom: 12,
+    },
+    shapeNames: {
+      // From https://data.gov.au/data/dataset/commonwealth-electoral-divisions-as-at-2-august-2021
+      "2021-cwlth_electoral_boundaries_esri.zip": "2021_ELB_region.shp",
+    },
+    regionTypes: {
+      ELB_NAME_2021: {
+        regionProp: "Elect_div",
+        nameProp: "Elect_div",
+        aliases: ["com_elb_name_2021", "com_elb_name"],
+        description: "Commonwealth Electoral Divisions as at 2 August 2021 (AEC)",
+        bbox: [96.81, -43.73, 168.0, -9.1],
+      },
+    },
+  },
+  POA_2021: {
+    tippecanoeOptions: {
+      minimumZoom: 0,
+      maximumZoom: 12,
+    },
+    sharedGeopackage: {
+      // From https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files
+      zip: "ASGS_Ed3_Non_ABS_Structures_GDA2020_updated_2023.zip",
+      gpkg: "ASGS_Ed3_Non_ABS_Structures_GDA2020_updated_2023.gpkg",
+      layerName: "POA_2021_AUST_GDA2020",
+    },
+    regionTypes: {
+      POA_2021: {
+        regionProp: "POA_CODE_2021",
+        nameProp: "POA_CODE_2021",
+        aliases: [
+          "poa_code_2021",
+          "poa_code",
+          "poa",
+          "postcode_2021",
+          "postcode",
+        ],
+        description: "Postal Areas 2021 (ABS)",
+        bbox: [96.81, -43.74, 168.0, -9.14],
+      },
+    },
+  },
+}
