@@ -74,6 +74,20 @@ async function toGeoJSON() {
   }
 }
 
+async function toRegularGeoJSON() {
+  for (let bt of activeBoundaryTypes) {
+    const ndGeojsonName = `${geojsonDir}/${bt}-fid.nd.json`;
+    const geoJsonName = `${geojsonDir}/${bt}.geojson`;
+    let cmd =
+      `cat ${ndGeojsonName}` +
+      `| yarn run --silent ndjson2geojson ` +
+      `> ${geoJsonName}`;
+
+    console.log(cmd);
+    throwIfFailed(shell.exec(cmd, { silent: true }));
+  }
+}
+
 async function addFeatureIds() {
   // d is the feature, i is the numerical index. ", d" is to return the feature itself from the map
   for (let bt of activeBoundaryTypes) {
@@ -296,6 +310,7 @@ exports.updateRegionMapping = series(makeRegionIds, writeRegionMappingFile);
 exports.all = series(
   toGeoJSON,
   addFeatureIds,
+  toRegularGeoJSON,
   makeVectorTiles,
   exports.updateRegionMapping
 );
