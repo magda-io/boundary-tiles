@@ -310,7 +310,6 @@ exports.updateRegionMapping = series(makeRegionIds, writeRegionMappingFile);
 exports.all = series(
   toGeoJSON,
   addFeatureIds,
-  toRegularGeoJSON,
   makeVectorTiles,
   exports.updateRegionMapping
 );
